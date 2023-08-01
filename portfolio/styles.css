@@ -1,0 +1,354 @@
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+line-height: 1.6;
+}
+
+/* Header Section */
+header {
+background-color: #333;
+color: #fff;
+text-align: center;
+padding: 2rem;
+
+}
+
+header h1 {
+font-size: 3rem;
+margin-bottom: 0;
+}
+
+header p {
+font-size: 1.2rem;
+margin-top: 0.5rem;
+}
+
+
+/* Navigation Menu */
+.menu-btn {
+display: none;
+font-size: 1.5rem;
+cursor: pointer;
+color: #fff;
+padding: 0.5rem;
+background-color: #444;
+}
+
+.menu-btn:hover {
+background-color: #555;
+}
+
+/* Navigation Links */
+nav {
+background-color: #444;
+color: #fff;
+padding: 1rem;
+position: sticky;
+display: flex;
+justify-content: center;
+top: 0;
+z-index: 1;
+}
+
+nav ul {
+list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+
+}
+
+nav li {
+margin: 0 1rem;
+}
+
+nav a {
+color: #fff;
+text-decoration: none;
+font-size: 1.2rem;
+transition: color 0.3s ease;
+}
+
+nav a:hover,nav a.active  {
+color: rgb(153, 153, 228);
+}
+
+
+/* Main Section */
+section {
+padding: 2rem;
+text-align: center;
+}
+/* content  Section */
+#contact {
+background-color: #f0f0f0;
+padding: 2rem;
+text-align: center;
+}
+
+#contact h2 {
+font-size: 2.2rem;
+margin-bottom: 1rem;
+color: #333;
+}
+
+#contact p {
+color: #777;
+}
+
+#contact a {
+color: #333;
+text-decoration: none;
+transition: color 0.3s ease;
+}
+
+#contact a:hover {
+color: #555;
+}
+
+/* Footer Section */
+footer {
+background-color: #333;
+color: #fff;
+text-align: center;
+padding: 1rem;
+}
+
+footer p {
+color: #ccc;
+margin: 0;
+}
+
+#about img {
+display: block;
+margin: 0 auto;
+border-radius: 50%;
+width: 300px; 
+height: 200px; 
+object-fit: cover; 
+object-position: center center; 
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+/* Adjust the layout for smaller screens */
+
+/* Hide the navigation links */
+nav:not(.active) {
+display: none;
+}
+
+/* Show the menu button symbol and adjust header text size */
+.menu-btn {
+display: block;
+}
+
+header h1 {
+font-size: 2.5rem;
+}
+
+header p {
+font-size: 1rem;
+}
+
+nav {
+display: flex;
+flex-direction: column;
+align-items: center; /* Center the links vertically on small screens */
+}
+
+nav ul {
+flex-direction: column;
+}
+
+nav li {
+margin: 0.5rem 0; /* Adjust vertical spacing between links */
+}
+/* Increase the font size on small screens */
+section {
+font-size: 1.2rem;
+}
+}
+
+@media screen and (min-width: 769px) {
+/* Adjust the layout for big screens */
+
+.menu-icon {
+display: none;
+}
+
+.menu-btn {
+display: none;
+}
+
+nav {
+display: flex;
+}
+
+/* Increase the size of the symbols on big screens */
+nav a i {
+font-size: 2.2rem;
+}
+
+/* Increase the font size of all sections on big screens */
+section {
+font-size: 1.8rem;
+}
+
+/* Increase the section height on big screens */
+#about,
+#experience,
+#education,
+#skills,
+#interests,
+#awards,
+#contact {
+min-height: 600px;
+}
+}
+
+
+/* Style for Skills Section */
+.skills-icons {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+gap: 1rem;
+justify-items: center;
+margin: 2rem auto;
+}
+
+.skills-icons div {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.skills-icons i {
+font-size: 3rem;
+margin-bottom: 1rem;
+color: #555;
+}
+
+.skills-icons span {
+font-size: 1.9rem;
+}
+
+/* Workflow styles */
+.workflow {
+text-align: center;
+margin-top: 2rem;
+padding: 1rem;
+background-color: #f0f0f0;
+border-radius: 8px;
+}
+
+.workflow h3 {
+color: #333;
+}
+
+.workflow p {
+text-align: left;
+margin-left: 2rem;
+}
+
+/* Style for Awards Section */
+#awards p {
+text-align: left;
+margin-left: 2rem;
+}
+
+#awards i {
+margin-right: 0.5rem;
+}
+
+/* Style for Experience Section */
+#experience {
+position: relative;
+color: #fff;
+}
+
+.job {
+margin-bottom: 2rem;
+}
+
+.job h3 {
+font-size: 1.8rem;
+}
+
+.job p {
+font-size: 1.rem;
+line-height: 1.8;
+}
+
+/* Position styles */
+.job .position {
+font-weight: bold;
+color: #1e90ff; 
+}
+
+.job .position-senior,.job .position-junior {
+font-weight: bold;
+color: #1e90ff;
+}
+
+
+/* Date styles */
+.job .date {
+font-size: 1rem;
+color: #ccc;
+}
+
+/* Date styles */
+.job .date {
+font-size: 1rem;
+color: #ccc;
+}
+#about{
+color: #fff;;
+}
+
+/* Overlay for the About and Experience Sections */
+#about::after,
+#experience::after {
+content: "";
+display: block;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: url(img/bg-masthead.jpg) no-repeat center center fixed;
+background-size: cover;
+filter: brightness(40%);
+z-index: -1;
+}
+
+.icon-blue {
+color: #007bff;
+}
+
+.icon-green {
+color: #28a745; 
+}
+
+.icon-red {
+color: #dc3545; 
+}
+
+.icon-orange {
+color: #fd7e14; 
+}
+
+.icon-purple {
+color: #6f42c1;
+}
+
+.icon-pink {
+color: #e83e8c; 
+}
+
+.icon-yellow {
+color: #ffc107; 
+}
