@@ -3,54 +3,90 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FuseTech | Henderson Fuse</title>
+    <title>Henderson Fuse | FuseTech</title>
     <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <nav id="nav">
       <a href="#top" class="brand">FuseTech</a>
       <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
+        <span></span><span></span>
       </button>
       <ul>
         <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#education">Education</a></li>
-        <li><a href="#skills">Skills</a></li>
         <li><a href="#interests">Interests</a></li>
-        <li><a href="#awards">Awards</a></li>
-        <li><a href="#contact" class="pill">Contact</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
 
     <header id="top" class="hero">
-      <div class="orb orb-a"></div>
-      <div class="orb orb-b"></div>
-      <div class="hero-inner">
-        <img src="img/AMA_1628_(1).jpg" alt="Henderson Fuse" class="avatar" />
-        <h1><span>Henderson</span> <span>Fuse</span></h1>
-        <p class="role">Senior web developer building fast, responsive sites.</p>
-        <div class="cta">
-          <a href="#experience" class="btn primary">View my work</a>
-          <a href="#contact" class="btn ghost">Get in touch</a>
-        </div>
+      <img src="img/AMA_1628_(1).jpg" alt="Henderson Fuse" class="avatar" />
+      <h1>Henderson Fuse</h1>
+      <p class="role">Software developer building APIs, web apps and the systems behind them.</p>
+      <div class="cta">
+        <a href="#contact" class="btn primary">Get in touch</a>
+        <a href="#experience" class="btn ghost">See experience</a>
       </div>
     </header>
 
     <main>
       <section id="about" class="reveal">
-        <h2>About me</h2>
+        <h2>About</h2>
         <p class="lead">
-          I am experienced in leveraging agile frameworks to provide a robust
-          synopsis for high level overviews. Iterative approaches to corporate
-          strategy foster collaborative thinking to further the overall value
-          proposition.
+          I build and integrate APIs, design interfaces in Figma, and run the
+          infrastructure that keeps them online. I work across PHP, Python,
+          JavaScript, Java and Flutter, and I care about code that is simple to
+          maintain.
         </p>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <div class="skill-groups">
+          <div class="group reveal">
+            <h3>Languages and frameworks</h3>
+            <ul class="chips">
+              <li>PHP and frameworks</li>
+              <li>Python and frameworks</li>
+              <li>JavaScript and frameworks</li>
+              <li>Java</li>
+              <li>Spring Boot</li>
+              <li>Flutter</li>
+            </ul>
+          </div>
+          <div class="group reveal">
+            <h3>APIs and messaging</h3>
+            <ul class="chips">
+              <li>API development</li>
+              <li>Third-party integrations</li>
+              <li>RabbitMQ</li>
+              <li>Redis</li>
+            </ul>
+          </div>
+          <div class="group reveal">
+            <h3>Data and infrastructure</h3>
+            <ul class="chips">
+              <li>Databases</li>
+              <li>Load balancing</li>
+              <li>Docker</li>
+              <li>Linux</li>
+            </ul>
+          </div>
+          <div class="group reveal">
+            <h3>Design</h3>
+            <ul class="chips">
+              <li>Figma</li>
+              <li>Responsive, mobile-first UI</li>
+            </ul>
+          </div>
+        </div>
       </section>
 
       <section id="experience">
@@ -83,79 +119,37 @@
         </div>
       </section>
 
-      <section id="education">
+      <section id="education" class="reveal">
         <h2>Education</h2>
-        <div class="edu-grid">
-          <div class="card reveal">
-            <span class="date">August 2006 – May 2010</span>
-            <h3>University of Malawi, The Polytechnic</h3>
-            <h4>Bachelor of Science, Computer Science</h4>
-            <p>Web Development Track · GPA 3.23</p>
-          </div>
-          <div class="card reveal">
-            <span class="date">High school</span>
-            <h3>James Buchanan High School</h3>
-            <h4>Technology Magnet Program</h4>
-            <p>GPA 3.56</p>
-          </div>
-        </div>
+        <h3>University of Malawi, The Polytechnic</h3>
+        <h4>Bachelor of Science, Computer Science</h4>
       </section>
 
-      <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-icons">
-          <div class="reveal"><i class="fab fa-html5 icon-red"></i><span>HTML</span></div>
-          <div class="reveal"><i class="fab fa-css3-alt icon-blue"></i><span>CSS</span></div>
-          <div class="reveal"><i class="fab fa-js icon-yellow"></i><span>JavaScript</span></div>
-          <div class="reveal"><i class="fab fa-react icon-blue"></i><span>React</span></div>
-          <div class="reveal"><i class="fab fa-node icon-green"></i><span>Node.js</span></div>
-          <div class="reveal"><i class="fab fa-python icon-blue"></i><span>Python</span></div>
-          <div class="reveal"><i class="fas fa-database icon-purple"></i><span>MySQL</span></div>
-          <div class="reveal"><i class="fas fa-database icon-purple"></i><span>MongoDB</span></div>
-        </div>
-        <div class="workflow reveal">
-          <h3>Workflow</h3>
-          <ul>
-            <li>Mobile-first, responsive design</li>
-            <li>Cross-browser testing and debugging</li>
-            <li>Cross-functional teams</li>
-            <li>Agile development and Scrum</li>
-          </ul>
-        </div>
-      </section>
-
-      <section id="interests">
+      <section id="interests" class="reveal">
         <h2>Interests</h2>
-        <div class="interests reveal">
-          <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
-          <p>When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p>
-        </div>
+        <p class="lead">
+          Apart from being a web developer, I enjoy most of my time being
+          outdoors. In the winter, I am an avid skier and novice ice climber.
+          During the warmer months here in Colorado, I enjoy mountain biking,
+          free climbing, and kayaking.
+        </p>
+        <p class="lead">
+          When forced indoors, I follow a number of sci-fi and fantasy genre
+          movies and television shows, I am an aspiring chef, and I spend a
+          large amount of my free time exploring the latest technology
+          advancements in the front-end web development world.
+        </p>
       </section>
 
-      <section id="awards">
-        <h2>Awards</h2>
-        <ul class="awards">
-          <li class="reveal"><i class="fas fa-trophy icon-yellow"></i>Google Analytics Certified Developer</li>
-          <li class="reveal"><i class="fas fa-trophy icon-blue"></i>Mobile Web Specialist, Google Certification</li>
-          <li class="reveal"><i class="fas fa-trophy icon-green"></i>1st Place, University of Malawi, Emerging Tech Competition 2009</li>
-          <li class="reveal"><i class="fas fa-trophy icon-orange"></i>1st Place, University of Malawi, Adobe Creative Jam 2008 (UI Design)</li>
-          <li class="reveal"><i class="fas fa-trophy icon-red"></i>2nd Place, University of Colorado Boulder, Emerging Tech Competition 2008</li>
-          <li class="reveal"><i class="fas fa-trophy icon-blue"></i>1st Place, James Buchanan High School, Hackathon 2006</li>
-          <li class="reveal"><i class="fas fa-trophy icon-purple"></i>3rd Place, James Buchanan High School, Hackathon 2005</li>
-        </ul>
-      </section>
-
-      <section id="contact">
-        <div class="contact-card reveal">
-          <h2>Contact me</h2>
-          <p>Feel free to get in touch by email.</p>
-          <a class="btn primary" href="mailto:bis20-hfuse@poly.ac.mw">bis20-hfuse@poly.ac.mw</a>
-          <div class="social">
-            <a href="https://www.facebook.com/your-profile" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-            <a href="https://github.com/your-profile" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://twitter.com/your-profile" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-          </div>
+      <section id="contact" class="reveal">
+        <h2>Contact</h2>
+        <p class="lead">Have a project or an idea? Send me an email.</p>
+        <a class="mail" href="mailto:bis20-hfuse@poly.ac.mw">bis20-hfuse@poly.ac.mw</a>
+        <div class="social">
+          <a href="https://github.com/your-profile" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://twitter.com/your-profile" target="_blank" rel="noopener">Twitter</a>
+          <a href="https://www.facebook.com/your-profile" target="_blank" rel="noopener">Facebook</a>
         </div>
       </section>
     </main>
@@ -178,12 +172,10 @@
         })
       );
 
-      // Nav background after scrolling
-      const onScroll = () => nav.classList.toggle("scrolled", window.scrollY > 40);
+      const onScroll = () => nav.classList.toggle("scrolled", window.scrollY > 10);
       onScroll();
       window.addEventListener("scroll", onScroll, { passive: true });
 
-      // Reveal on scroll + active link highlighting
       const io = new IntersectionObserver(
         (entries) =>
           entries.forEach((e) => {
@@ -192,12 +184,9 @@
               io.unobserve(e.target);
             }
           }),
-        { threshold: 0.15 }
+        { threshold: 0.12 }
       );
-      document.querySelectorAll(".reveal").forEach((el, i) => {
-        el.style.setProperty("--d", (i % 4) * 80 + "ms");
-        io.observe(el);
-      });
+      document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
 
       const spy = new IntersectionObserver(
         (entries) =>
